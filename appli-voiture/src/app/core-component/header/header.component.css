@@ -1,0 +1,47 @@
+.customf{
+
+    display:flex;
+    
+    
+}
+
+.customlogo{
+
+    width: 90%;
+    
+}
+
+.custom1{
+
+
+    width: 100%;
+    
+}
+
+.customtitre{
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    color: rgb(80, 53, 118);
+
+}
+
+.custommenu{
+
+    display:flex;
+    justify-content: center;
+    list-style-type:none;
+    font-size:larger;
+    
+    
+}
+
+.custommenu li{
+
+    margin: 1em;
+    
+    
+    
+    }

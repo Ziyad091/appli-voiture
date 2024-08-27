@@ -1,0 +1,51 @@
+.titre{
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size:medium;
+
+
+}
+
+
+
+.footer-logo{
+
+    width: 50%;
+    font-size: smaller;
+    text-align: right;
+
+}
+
+.insta{
+    
+    font-size: smaller;
+    width: 10%;
+
+}
+
+.fb{
+
+    font-size: smaller;
+    justify-content: right;
+    width: 10%;
+    
+
+}
+
+.lkd{
+
+    font-size: smaller;
+    justify-content: right;
+    width: 10%;
+
+
+}
+
+.footer{
+
+    display: flex;
+    justify-content: space-around;
+
+}

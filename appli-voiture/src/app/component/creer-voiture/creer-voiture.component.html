@@ -1,0 +1,76 @@
+<!-- <form method="get" action="">
+
+    <div>
+        <label for="text">Input text : </label>
+        <input type="text" name="text">
+    </div><br>
+
+    <div>
+        <label for="number">Input number : </label>
+        <input type="number" name="number">
+    </div><br>
+
+    <div>
+        <label for="password">Input password : </label>
+        <input type="password" name="password">
+    </div><br>
+
+    <div>
+        <label for="email">Input email : </label>
+        <input type="email" name="email">
+    </div><br>
+
+    <div>
+        <label for="date">Input date : </label>
+        <input type="date" name="date">
+    </div><br>
+
+    <div>
+        <label for="message">Input message : </label>
+        <textarea name="message">Veuillez écrire votre message</textarea>
+    </div><br>
+        
+</form> -->
+
+
+<h2 class="title" > Créer une voiture </h2>
+
+<form class="formu" [formGroup]="voitureForm" (ngSubmit)="onSubmit()">
+    
+    <fieldset class="fieldset">
+        <div>
+            <label for="marque">marque: </label>
+            <input type="text" name="marque" id="marque" formControlName="marque">
+        </div><br>
+        
+        <div>
+            <label for="modele">modele: </label>
+            <input type="text" name="modele" id="modele" formControlName="modele">
+        </div><br>
+        
+        <div>
+            <label for="puissance">puissance: </label>
+            <input type="number" name="puissance" id="puissance" formControlName="puissance">
+        </div><br>
+        
+        <button class="creer" type="submit" [disabled]="!voitureForm.valid">Créer</button>
+    </fieldset> 
+
+</form>
+
+<table>
+    <thead>
+        <th>Marque</th>
+        <th>Modele</th>
+        <th>Puissance</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let voiture of voitures">
+            <td>{{voiture.modele}}</td>
+            <td>{{voiture.marque}}</td>
+            <td>{{voiture.puissance}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
